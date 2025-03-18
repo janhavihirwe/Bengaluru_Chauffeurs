@@ -1,0 +1,33 @@
+.terms{
+    background-color: white;
+    height:fit-content;
+    padding-bottom: 30px;
+    .maindiv{
+        width: 85%;
+        margin: 30px auto;
+        .icon{
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        .heading{
+            display: flex;
+            gap: 20px; 
+            align-items: center;
+            font-size: 27px;
+            font-weight: 700;
+            margin-top: 50px;
+        }
+        .p1{
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .terms{
+        height: fit-content !important;
+    }
+}

@@ -1,0 +1,96 @@
+.fifthsec{
+    background-color: #191815;
+    color: white;
+    padding-bottom: 20px;
+    .div1{
+        padding-top: 40px;
+        padding-left: 70px;
+        .text1{
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+        }
+        .text2{
+            font-size: 27px;
+            font-weight: 600;
+            color: #FCDD5E;
+        }
+    }
+    .slider {
+        width: 93%;
+        margin: 40px auto;
+        
+        .slick-list {
+            padding: 0 5px !important;  // Ensures spacing is properly applied
+        }
+    
+        .slick-slide {
+            display: flex;
+            justify-content: center;  // Centers cards
+            padding: 0px;  // Adds spacing between slides
+        }
+        .slick-dots {
+            bottom: -30px; // Adjust positioning if needed
+            li {
+                margin: 0 5px; // Space between dots
+                
+                button:before {
+                    font-size: 12px; // Adjust dot size
+                    color: white !important; // Set dots to white
+                    opacity: 0.7; // Make it slightly visible
+                }
+                
+                &.slick-active button:before {
+                    color: white !important; // Active dot also white
+                    opacity: 1; // Full opacity for active dot
+                }
+            }
+        }
+        
+        .feedback-card {
+            border: 1px solid #FFFFFF;
+            border-radius: 15px;
+            width: 100%;  // Makes sure it adjusts within the slide
+            max-width: 400px;  // Adjust based on your design
+            height: 320px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            .comma{
+                padding-left: 5px;
+            }
+            .feedback-text {
+                width: 80%;
+                padding: 20px 20px 10px 20px;
+            }
+    
+            .feedback-name {
+                padding: 10px 30px 10px 20px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .fifthsec{
+        .div1{
+            padding-left: 30px !important;
+            .text2{
+                font-size: 18px !important;
+                margin-bottom: 30px !important;
+            }
+        }
+        .slider{
+            .feedback-card{
+                width: 85% !important;
+                height: auto !important;
+                .feedback-name {
+                    padding: 10px 30px 0px 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

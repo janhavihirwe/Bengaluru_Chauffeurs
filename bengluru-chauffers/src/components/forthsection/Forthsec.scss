@@ -1,0 +1,104 @@
+.forthsec{
+    background-color: black;
+    padding-bottom: 20px;
+    .div1{
+        padding-top: 40px;
+        padding-left: 70px;
+        .subdiv1{
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+        }
+        .subdiv2{
+            font-size: 27px;
+            font-weight: 600;
+            color: #FCDD5E;
+        }
+    }
+    .div2{
+        display: flex;
+        color: white;
+        padding-top: 50px;
+        padding-left: 70px;
+        gap: 70px;
+            .divs{
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                .text1{
+                    background-color: #FCDD5E;
+                    color: black;
+                    padding: 7px 20px 7px 10px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    width: 100%;
+                }
+                .text{
+                    font-weight: 400;
+                    padding: 10px 18px 7px 10px;
+                    font-size: 18px;
+                    width: 100%;
+                    border-right: 2px solid #978538;
+                }
+        }
+        .div3{
+            display: flex;
+            gap: 80px;
+            width: 80%;
+            .subdiv1{
+                width: 60%;
+                margin-top: 10px;
+            }
+            .text1{
+                font-size: 22px;
+                font-weight: 400;
+                color: #FCDD5E;
+            }
+            .text2{
+                width: 90%;
+                margin-top: 15px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .img{
+                width: 300px;
+                height: 216px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .forthsec{
+        .div1{
+            padding-left: 30px !important;
+            .subdiv2{
+                font-size: 18px !important;
+                margin-bottom: 30px !important;
+            }
+        }
+        .div2{
+            flex-direction: column;
+            padding-left: 30px !important;
+            .text, .text1{
+                width: 80% !important;
+            }
+            .div3{
+                flex-direction: column;
+                gap: 40px !important;
+                width: 90% !important;
+                .subdiv1{
+                    width: 100% !important;
+                    .text1{
+                        width: 100% !important;
+                    }
+                    .text2{
+                        width: 100% !important;
+                    }
+                }
+            }
+
+        }
+    }
+}

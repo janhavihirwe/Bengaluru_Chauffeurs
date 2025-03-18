@@ -1,0 +1,161 @@
+.sixthsec{
+    background-color: black;
+    padding-bottom: 20px;
+    .div1{
+        padding-top: 40px;
+        padding-left: 70px;
+        .subdiv1{
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+        }
+        .subdiv2{
+            font-size: 27px;
+            font-weight: 600;
+            color: #FCDD5E;
+        }
+    }
+    .div2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 20px;
+        .subdiv1{
+            .locdiv{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-left: 70px;
+                padding-top: 50px;
+                .location {
+                    background-color: #FCDD5E; // Yellow background
+                    border-radius: 50%; // Makes it circular
+                    padding: 10px; // Adjust padding for circle size
+                    display: flex; 
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px; // Adjust as needed
+                    height: 30px; // Same as width for a perfect circle
+                    color: black; // Icon color (change if needed)
+                    font-size: 18px; // Adjust icon size if necessary
+                }
+                .info{
+                   
+                    color: white;
+                    .heading{
+                        font-size: 22px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .contactdiv{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-left: 70px;
+                padding-top: 50px;
+                .location {
+                    background-color: #FCDD5E; // Yellow background
+                    border-radius: 50%; // Makes it circular
+                    padding: 10px; // Adjust padding for circle size
+                    display: flex; 
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px; // Adjust as needed
+                    height: 30px; // Same as width for a perfect circle
+                    color: black; // Icon color (change if needed)
+                    font-size: 18px; // Adjust icon size if necessary
+                }
+                .info{
+                   
+                    color: white;
+                    .heading{
+                        font-size: 22px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .subdiv2 {
+            width: 60%;
+            min-width: 300px;
+            margin-top: 25px;
+            .map{
+                border: none;
+                border-radius: 10px;
+                width: 810px;
+                height: 272px;
+            }
+          }
+    }
+}
+
+@media(max-width:500px){
+    .sixthsec{
+        .div1{
+            padding-left: 30px !important;
+            .subdiv2{
+                font-size: 18px;
+                margin-bottom: 30px !important;
+            }
+        }
+        .div2{
+            display: flex;
+            flex-direction: column;
+            .subdiv1{
+                .locdiv{
+                    padding-left: 10px !important;
+                    padding-top: 30px !important;
+                    .location{
+                        width: 24px !important;
+                        height: 24px !important;
+                    }
+                    .info{
+                        .heading{
+                            font-size: 20px !important;
+                        }
+                        .p{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+                .contactdiv{
+                    padding-left: 10px !important;
+                    .location{
+                        width: 24px !important;
+                        height: 24px !important;
+                    }
+                    .info{
+                        .heading{
+                            font-size: 20px !important;
+                        }
+                        .p{
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .subdiv2{
+            width: 100% !important;
+            .map{
+                width: 100% !important;
+            }
+        }
+    }
+}

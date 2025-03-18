@@ -1,0 +1,172 @@
+.book{
+    background-color: black;
+    .div1{
+        width: 100%;
+        margin: 50px auto;
+        .subdiv1{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            align-items: center;
+            width: 58%;
+            .icon{
+                color: white;
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+            }
+            .heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .p1{
+                    color: #FCDD5E;
+                    font-size: 27px;
+                    font-weight: 600;
+                }
+                .p2{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .subdiv2{
+            background-color: #FFFCEF;
+            width: 55%;
+            margin: 30px auto;
+            border: none;
+            border-radius: 25px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            .radioContainer{
+                display: flex;
+                margin: 0px auto;
+                justify-content: space-between;
+                width: 85%;
+                div {
+                  display: flex; 
+                  align-items: center; 
+                  gap: 3px; 
+                }
+        
+                input[type='radio'] {
+                  appearance: none; 
+                  width: 16px; 
+                  height: 16px;
+                  border: 1px solid black; 
+                  border-radius: 50%; 
+                  background-color: transparent; 
+                  cursor: pointer;
+                  position: relative; 
+                  transition: background-color 0.3s ease, border-color 0.3s ease;
+            
+                  &:checked {
+                    border-color: none; 
+                    background-color:none; 
+            
+                    &::after {
+                      content: ''; 
+                      position: absolute;
+                      top: 50%; 
+                      left: 50%; 
+                      transform: translate(-50%, -50%);
+                      width: 8px; 
+                      height: 8px;
+                      background-color: black; 
+                      border-radius: 50%; 
+                    }
+                  }
+                }
+                label {
+                  margin-left: 5px;
+                  cursor: pointer;
+                  font-size: 14px;
+                  font-weight: 400;
+                  margin-top: 7px; 
+                }
+            }
+            .inputContainer{
+                display: flex;
+                margin: 30px auto;
+                width: 85%;
+                justify-content: space-between;
+                .input-field{
+                    width: 299px;
+                    height: 49px;
+                    border: 2px solid black;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    padding: 0px 20px 0px 20px;
+                    color: black;
+                }
+            }
+            .btn{
+                align-self: flex-end;
+                width: 330px;
+                height: 53px;
+                background-color: #FCDD5E;
+                border: none;
+                border-radius: 50px;
+                margin-right: 10%;
+                padding: 0px 20px 0px 20px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .subdiv3{
+                width: 85%;
+                margin: 30px auto;
+                .heading{
+                    color: #900423;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                .note{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .book{
+        .div1{
+            .subdiv1{
+                width: 80% !important;
+                margin-left: 20px !important;
+                .icon{
+                    width: 28px !important;
+                    height: 28px !important;
+                }
+                .heading{
+                    .p1{
+                        font-size: 20px;
+                    }
+                    .p2{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .subdiv2{
+                width: 90% !important;
+                .radioContainer{
+                    display: grid !important;
+                    grid-template-columns: repeat(2,1fr);
+                }
+                .inputContainer{
+                    flex-direction: column !important;
+                    margin-bottom: 0px !important;
+                    margin-top: 20px !important;
+                    .input-field{
+                        width: 80% !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}

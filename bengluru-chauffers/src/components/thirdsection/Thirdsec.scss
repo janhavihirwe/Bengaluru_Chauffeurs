@@ -1,0 +1,80 @@
+.thirdsec{
+    background-color: #191815;
+    padding-bottom: 20px;
+    .div1{
+        padding-top: 40px;
+        padding-left: 70px;
+        .subdiv1{
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+        }
+        .subdiv2{
+            font-size: 27px;
+            font-weight: 600;
+            color: #FCDD5E;
+        }
+    }
+    .div2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 32px;
+        width: 90%;
+        margin: 20px auto;
+        .card{
+            background-color: #FFFAE7;
+            border-radius: 15px;
+            padding: 30px;
+            .text1{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .text2{
+                font-size: 22px;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .text3{
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: start;
+                gap: 10px;
+                .line {
+                    width: 2px; /* Adjust thickness of the line */
+                    height: 15px; /* Adjust height based on text size */
+                    background-color: #978538; /* Yellow color */
+                    margin-top: 5px;
+                }
+            }
+            .btn{
+                width: 168px;
+                height: 41px;
+                background-color: #FCDD5E;
+                font-size: 14px;
+                font-weight: 400;
+                border: none;
+                border-radius: 50px; 
+                margin-top: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .thirdsec{
+        .div1{
+            padding-left: 30px !important;
+            .subdiv2{
+                font-size: 18px;
+                margin-bottom: 30px !important;
+            }
+        }
+        .div2{
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+    }
+}
