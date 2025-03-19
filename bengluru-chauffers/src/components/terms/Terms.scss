@@ -29,5 +29,10 @@
 @media(max-width:500px){
     .terms{
         height: fit-content !important;
+        .maindiv{
+            .heading{
+                font-size: 18px !important;
+            }
+        }
     }
 }
